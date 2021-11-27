@@ -1,0 +1,38 @@
+{
+    "name": "kareokeplaylist",
+    "version": "1.0.0",
+    "description": "playlist server for kareoke",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/app.js",
+        "debug": "nodemon --inspect=0.0.0.0:9229 -e js ./src/app.js",
+        "test": "test",
+        "db-migrate": "db-migrate",
+        "coverage": "jest --coverage"
+    },
+    "author": "TJ Biegner",
+    "license": "ISC",
+    "dependencies": {
+        "@hapi/joi": "^17.1.0",
+        "axios": "^0.19.2",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "joi": "^14.3.1",
+        "moment": "^2.24.0",
+        "mysql2": "^2.1.0",
+        "node-schedule": "^1.3.2"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.9.1",
+        "db-migrate": "^0.11.6",
+        "eslint": "^6.1.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-prettier": "^3.1.2",
+        "jest": "^25.1.0",
+        "nodemon": "^2.0.2",
+        "prettier": "^1.19.1"
+    }
+}
